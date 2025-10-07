@@ -1,7 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global theme tokens and resets */
 
-html, body {
+:root {
+  color-scheme: light dark;
+  --app-background: #f8fafc;
+  --surface: #ffffff;
+  --text-color: #0f172a;
+  --muted-text: #1f2937;
+  --accent-color: #16a34a;
+  --accent-strong: #15803d;
+  --footer-background: #f9fafb;
+  --footer-border: rgba(22, 163, 74, 0.2);
+  --footer-link: #0e141b;
+  --footer-link-hover: #15803d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --app-background: #030712;
+    --surface: #0f172a;
+    --text-color: #e5e7eb;
+    --muted-text: #cbd5f5;
+    --accent-color: #34d399;
+    --accent-strong: #22c55e;
+    --footer-background: #0b1120;
+    --footer-border: rgba(52, 211, 153, 0.26);
+    --footer-link: #e5e7eb;
+    --footer-link-hover: #6ee7b7;
+  }
+}
+
+html,
+body {
   font-family: "Instrument Serif", serif;
+  background-color: var(--app-background);
+  color: var(--text-color);
 }
 
 body {
