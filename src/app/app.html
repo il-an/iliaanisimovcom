@@ -1,5 +1,8 @@
-<main class="center">
-  <h1 class="name">{{ title() }}</h1>
+<main class="center" aria-labelledby="page-title">
+  <section class="intro">
+    <h1 class="name" id="page-title">{{ title() }}</h1>
+    <p class="about">{{ aboutPlaceholder() }}</p>
+  </section>
 </main>
 <router-outlet/>
 <app-footer/>

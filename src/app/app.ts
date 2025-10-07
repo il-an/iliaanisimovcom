@@ -11,4 +11,7 @@ import { FooterComponent } from './footer/footer';
 })
 export class App {
   protected readonly title = signal('Ilia Anisimov');
+  protected readonly aboutPlaceholder = signal(
+    'Hi! I am Ilia Anisimov, a student at Letovo School and a web developer.'
+  );
 }
