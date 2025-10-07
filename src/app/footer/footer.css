@@ -1,0 +1,44 @@
+:host {
+  display: block;
+  border-top: 1px solid rgba(22, 163, 74, 0.2);
+  background-color: #f9fafb;
+}
+
+.footer {
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  max-width: 960px;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #0e141b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer__link:focus-visible,
+.footer__link:hover {
+  color: #15803d;
+}
+
+.footer__icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+  display: block;
+}
+
+.footer__text {
+  font-size: 0.95rem;
+}
