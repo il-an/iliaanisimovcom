@@ -4,7 +4,7 @@ interface ContactLink {
   readonly label: string;
   readonly href: string;
   readonly ariaLabel: string;
-  readonly icon: 'email' | 'github' | 'telegram';
+  readonly icon: 'email' | 'github' | 'telegram' | 'matrix';
   readonly openInNewTab: boolean;
 }
 
@@ -35,6 +35,13 @@ export class FooterComponent {
       href: 'https://t.me/ilia_anis',
       ariaLabel: 'Message Ilia Anisimov on Telegram',
       icon: 'telegram',
+      openInNewTab: true
+    },
+    {
+      label: '@ilia:iliaanisimov.com',
+      href: 'https://matrix.to/#/@ilia:iliaanisimov.com',
+      ariaLabel: 'Message Ilia Anisimov on Matrix',
+      icon: 'matrix',
       openInNewTab: true
     }
   ]);
