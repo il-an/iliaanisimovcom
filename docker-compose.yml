@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:8444:8444"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+

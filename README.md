@@ -57,3 +57,27 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Docker (production build served by nginx)
+
+A multi-stage Dockerfile builds the Angular app and serves the compiled browser output with nginx.
+
+Build the image:
+
+```bash
+docker build -t iliaanisimovcom:latest .
+```
+
+Run it directly (binds to 127.0.0.1:8444):
+
+```bash
+docker run --rm -p 127.0.0.1:8444:8444 iliaanisimovcom:latest
+```
+
+Or use docker-compose (build + run):
+
+```bash
+docker-compose up --build --detach
+```
+
+Then open http://127.0.0.1:8444 in your browser.
